@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
         AddGold(output);
     }
 
-    private void AddGold(double value)
+    public void AddGold(double value)
     {
         TotalGold += value;
         GoldInfo.text = $"Gold: { TotalGold.ToString("0") }";

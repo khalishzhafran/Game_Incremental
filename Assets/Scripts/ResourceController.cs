@@ -69,7 +69,7 @@ public class ResourceController : MonoBehaviour
             return;
         }
 
-        // GameManager.Instance.AddGold(-upgradeCost);
+        GameManager.Instance.AddGold(-upgradeCost);
         _level++;
 
         ResourceUpgradeCost.text = $"Upgrade Cost\n{ GetUpgradeCost() }";
